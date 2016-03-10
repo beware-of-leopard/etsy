@@ -45,9 +45,6 @@ var five = 5;
 var itemLocation = $(document.querySelector("main"));
 
 
-// var itemLocation = document.querySelector("main");
-
-
 function createItem(product){
 
 	var productImg = product.Images[0].url_170x135;
@@ -55,10 +52,10 @@ function createItem(product){
 		return `<div class="product">
 
 		  			<img src="${productImg}">
-		  			<div class="productTitle"></div>
+		  			<div class="productTitle">${product.title}</div>
 		  			<div class="makerAndPrice">
-		  				<div class="maker"></div>
-		  				<div class="price"></div>
+		  				<a class="maker" href="#">${product.Shop.shop_name}</a>
+		  				<div class="price">$${product.price} ${product.currency_code}</div>
 		  			</div>
 		  			
 		  		</div>`

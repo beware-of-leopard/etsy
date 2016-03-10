@@ -4,12 +4,45 @@
 	padding:0;
 	box-sizing: border-box;
 	list-style: none;
+	font-family: 'Nunito', sans-serif;
 }
 
 header{
-	background: url('https://www.etsy.com/assets/dist/images/etsylogo.20160212170534.png');
-	background-repeat: no-repeat;
-	height: 50px;
+	background-color: white;
+	height: 120px;
+	padding-top: 15px;
+
+	.useractions{
+		height: 70px;
+	}
+
+	h1{
+		background: url('https://www.etsy.com/assets/dist/images/etsylogo.20160212170534.png');
+		background-repeat: no-repeat;
+		height: 50px;
+	}
+
+	nav{
+		width: 100%;
+		border-top: 1px solid grey;
+		color: darken(#E1E3DF, 25%);
+		height: 50px;
+		ul{
+			// margin: auto;
+			// width: 80%;
+			text-align: center;
+			li{
+				display: inline-block;
+				padding-right: 15px;
+				line-height: 50px;
+			}
+			li:last-child{
+				padding-right: 0;
+			}
+		}
+
+		
+	}
 }
 
 .app{
@@ -19,16 +52,30 @@ header{
 .contentWrapper{
 	width: 1250px;
 	margin: auto;
-	
 	overflow: hidden;
+
+	main{
+		float: right;
+		width: 800px;
+		.product{
+			width: 180px;
+			border: 1px solid black;
+			display: inline-block;
+			margin: 8px;
+			background: white;
+
+			.productTitle{
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			
+		}
+	}
+
+	aside{
+		float: left;
+		width: 400px;
+	}
 }
 
-main{
-	float: right;
-	width: 800px;
-}
-
-aside{
-	float: left;
-	width: 400px;
-}
