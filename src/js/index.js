@@ -4,9 +4,6 @@
 import $ from 'jquery';
 import etsyData from './items';
 
-var items = etsyData.results;
-
-var five = 5;
 
 //////////////define the problem
 
@@ -42,7 +39,7 @@ var five = 5;
 // itemLocation.append(itemMarkup(items));
 
 
-var itemLocation = $(document.querySelector("main"));
+var itemLocation = $(document.querySelector(".products"));
 
 
 function createItem(product){
@@ -52,19 +49,25 @@ function createItem(product){
 		return `<div class="product">
 
 		  			<img src="${productImg}">
-		  			<div class="productTitle">${product.title}</div>
-		  			<div class="makerAndPrice">
-		  				<a class="maker" href="#">${product.Shop.shop_name}</a>
-		  				<div class="price">$${product.price} ${product.currency_code}</div>
+		  			<div class="productInfo">
+			  			<div class="productTitle">${product.title}</div>
+			  			<div class="makerAndPrice">
+			  				<a class="maker" href="#">${product.Shop.shop_name}</a>
+			  				<div class="price">$${product.price} ${product.currency_code}</div>
+			  			</div>
 		  			</div>
 		  			
 		  		</div>`
 
 };
 
-items.forEach(function(product){
+etsyData.results.forEach(function(product){
 	itemLocation.append(createItem(product));
 })
+
+var numberOfSearchResults = $(".numberOfSearchResults");
+
+numberOfSearchResults.append(etsyData.count);
 
 
 

@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>TIY Project</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -11,7 +12,18 @@
   <header>
 
     <div class="useractions">
-      <h1></h1>
+      <img src="https://www.etsy.com/assets/dist/images/etsylogo.20160212170534.png">
+      <div class="search">
+        <input placeholder="leather bound books"></input><button>Search</button>
+      </div>
+      <ul class="actions">
+        <li>Sell on Etsy</li>
+        <li>Register</li>
+        <li>Sign in</li>
+        <li><i class="fa fa-shopping-cart"></i> 
+          <div>Cart</div>
+        </li>
+      </ul>
     </div>
   	
   	<nav>
@@ -30,32 +42,133 @@
 
   <div class="contentWrapper">
   	<main>
-  		
+  		<div class="sortWrapper">
+        <div class="categories"><a href="#">All categories</a><strong> > “leather bound books”</strong> (<span class="numberOfSearchResults" ></span> Results)</div>
+        <div class="sort">Sort by: </div>  
+      </div>
+      <div class="products">
+        
+      </div>
   	</main>
   	<aside>
   		<h4>Show results for:</h4>
   		<ul class="sideBarNav">
-  			<li>stuff</li>
-  			<li>stuff</li>
-  			<li>stuff</li>
-  			<li>stuff</li>
-  			<li>stuff</li>
-  			<li>stuff</li>
-  			<li>stuff</li>
+        <h4>All categories</h4>
+  			<li><a href="#">Books, Movies &amp; Music</a></li>
+  			<li><a href="#">Craft Supplies &amp; Tools</a></li>
+  			<li><a href="#">Paper &amp; Party Supplies</a></li>
+  			<li><a href="#">Jewelry</li>
+  			<li><a href="#">Art &amp; Collectibles</a></li>
+  			<li><a href="#">Weddings</a></li>
+  			<li><a href="#">Home &amp; Living</a></li>
+        <li><a href="#">Bags &amp; Purses</a></li>
+        <li><a href="#">Electronics & Accessories</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Bath &amp; Beauty</a></li>
+        <li><a href="#">Toys &amp; Games</a></li>
   		</ul>
   		<div class="searchRefine">
-  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	  		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	  		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	  		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	  		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  			<h4>Refine your search</h4>
+        <div>
+          <div class="itemType">
+            <h4>Item type</h4>
+            <input type="radio"></input>
+            <input type="radio"></input>
+            <input type="radio"></input>
+          </div>
+          <div>
+            <h4>Price ($)</h4>
+            <input placeholder="Low"></input>
+            <input placeholder="High"></input>
+          </div>
+          <div>
+            <h4>Filter by color</h4>
+            <div class="colorSelector"></div>
+            <div class="colorSelector"></div>
+            <div class="colorSelector"></div>
+            <div class="colorSelector"></div>
+            <div class="colorSelector"></div>
+            <div class="colorSelector"></div>
+            <div class="colorSelector"></div>
+            <div class="colorSelector"></div>
+          </div>
+          <div>
+            <h4>Ordering options</h4>
+            <input type="checkbox"></input>
+            <input type="checkbox"></input>
+          </div>
+          <div>
+            <h4>Shop location</h4>
+            <input type="radio"></input>
+            <input type="radio"></input>
+          </div>
+          <div class="shipTo">
+            <h4>Ship to</h4>
+            <select></select>
+          </div>
+        </div>
   		</div>
   		
   	</aside>
   </div>
   <footer>
-  	<h2>This is a footer</h2>
+    <div class="footerContent">
+      <div class="subscribe">
+        <h4>Get top trends and fresh editors' picks in your inbox with Etsy Finds.</h4>
+        <input></input>
+        <button>Subscribe</button>
+      </div>
+      <div class="footerNav">
+        <ul>
+          <li>Turn your passion into a business</li>
+          <li>Open a shop</li>
+          <li>Sell on Etsy</li>
+          <a href="#"><li>Seller Handbook</li></a>
+          <a href="#"><li>Etsy credit card reader</li></a>
+          <a href="#"><li>Manufacturing</li></a>
+        </ul>
+        <ul>
+          <li>Join the community</li>
+          <a href="#"><li>Teams</li></a>
+          <a href="#"><li>Forums</li></a>
+          <a href="#"><li>Upcoming events</li></a>
+          <a href="#"><li>Affiliates</li></a>
+        </ul>
+        <ul>
+          <li>Discover and shop</li>
+          <a href="#"><li>Gift cards</li></a>
+          <a href="#"><li>Blog</li></a>
+          <a href="#"><li>Tastemakers</li></a>
+          <a href="#"><li>Mobile apps</li></a>
+          <a href="#"><li>Gift registries</li></a>
+          <a href="#"><li>Wholesale</li></a>
+          <a href="#"><li>Search</li></a>
+          <a href="#"><li>Editors’ Picks</li></a>
+        </ul>
+        <ul>
+          <li>Get to know us</li>
+          <a href="#"><li>About</li></a>
+          <a href="#"><li>Policies</li></a>
+          <a href="#"><li>Careers</li></a>
+          <a href="#"><li>Press</li></a> 
+          <a href="#"><li>Developers</li></a>
+          <a href="#"><li>Investors</li></a>
+        </ul>
+        <ul>
+          <li>Follow Etsy</li>
+          <a href="#"><li><i class="fa fa-facebook-square"> Facebook</i></li></a>
+          <a href="#"><li><i class="fa fa-twitter"> Twitter</i></li></a>
+          <a href="#"><li><i class="fa fa-pinterest-p"> Pinterest</i></li></a>
+          <a href="#"><li><i class="fa fa-instagram"> Instagram</i></li></a>
+        </ul>
+      </div>
+      <div class="legalFooter">
+        <ul>
+          <li>United States</li><li>English (US)</li><li>$ USD</li><li>Help</li>  
+        </ul>
+      </div>
+    </div>
+  	
   </footer>
 
   </div>
