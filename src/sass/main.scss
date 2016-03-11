@@ -24,16 +24,43 @@ header{
 		margin: auto;
 		.search{
 			float: left;
+			width: 300px;
+
+			input,button{
+				height: 30px;
+				padding: 5px;
+			}
+			input{
+				width:80%;
+			}
+			button{
+				width: 20%;
+				background-color: #34A8C4;
+				border:none;
+				color: white;
+			}
+			
 		}
 		.actions{
 			float: right;
 			li{
 				display: inline-block;
 				margin-left: 15px;
+				height: 100%;
+				vertical-align: middle;
+			}
+			li:nth-child(3){
+				border: 1px solid #34A8C4;
+				padding: 5px;
+				border-radius: 10%;
+				&:hover{
+				background: lighten(#34A8C4, 30%);
+				}
 			}
 			li:last-child{
 				border-left: 1px solid #DCDCD9;
-				padding-left: 5px;
+				padding-left: 15px;
+				color: darken(#E1E3DF, 50%);
 			}
 		}
 	}
@@ -46,7 +73,7 @@ header{
 	nav{
 		width: 100%;
 		border-top: 1px solid #DCDCD9;
-		color: darken(#E1E3DF, 25%);
+		color: darken(#E1E3DF, 50%);
 		height: 50px;
 		ul{
 			margin: auto;
