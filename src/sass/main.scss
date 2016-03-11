@@ -12,6 +12,29 @@ a{
 	color: #0895B7;
 }
 
+.button{
+	background-color: #34A8C4;
+	border:none;
+	color: white;
+	display: inline;
+	padding: 5px;
+}
+
+.fa-bars, .fa-heart{
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	color: darken(#E1E3DF, 25%);
+	background-color: white;
+	padding: 3px;
+	display: none;
+	&:hover{
+		color: darken(#E1E3DF, 40%);
+	}
+}.fa-heart{
+	right: 25px;
+}
+
 header{
 	background-color: white;
 	height: 125px;
@@ -129,6 +152,15 @@ header{
 				display: inline-block;
 				background: white;
 				margin-bottom: 20px;
+				position: relative;
+
+				&:hover{
+					cursor: pointer;
+					.fa-bars, .fa-heart{
+						display: inherit;
+						
+					}
+				}
 
 				.productInfo{
 					padding: 5px;
@@ -146,7 +178,7 @@ header{
 					overflow: hidden;
 					text-overflow: ellipsis;
 					padding-bottom: 5px;
-				}
+					}
 				}
 
 				
@@ -174,14 +206,37 @@ header{
 		.searchRefine{
 
 			margin-top: 20px;
-			div{
+
+			input.textInput{
+				height: 40px;
+				padding-left: 10px;
+			}
+			
+			div.refine{
 				margin-top: 10px;
 				padding: 15px;
 				background: white;
-				div{
+				div.refineSection{
 					border-bottom: 1px solid #DCDCD9;
-				}.shipTo{
+					padding: 10px 0 10px 0;
+				}
+				.price div {
+					input{
+						width: 50px;
+					}
+
+					>*{
+					display: inline-block;
+
+				}}
+				.shipTo.refineSection{
 					border-bottom: none;
+				}.itemType {
+					padding-top: 0;
+				}
+				.radio{
+				display: block;
+				border-bottom: none;
 				}
 				.colorSelector{
 					height: 20px;
@@ -246,6 +301,9 @@ footer{
 			li{
 				text-align: left;
 				margin-bottom: 10px;
+				&:nth-child(3){
+				margin-top: 20px;
+				}
 			}
 		}	
 	}

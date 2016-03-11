@@ -13,42 +13,15 @@ import etsyData from './items';
 
 ///////////Code for the html template
 
-// var itemLocation = $(document.querySelector("main"));
-
-// // var itemLocation = document.querySelector("main");
-
-
-// function itemMarkup(array){
-// 	array.reduce(function(memo,item){
-
-// 	var firstImage = item.Images[0].url_170x135;
-
-// 					return memo +=`<div class="item">
-
-// 					  			<img src="${firstImage}">
-// 					  			<div class="itemTitle"></div>
-// 					  			<div class="makerAndPrice">
-// 					  				<div class="maker"></div>
-// 					  				<div class="price"></div>
-// 					  			</div>
-					  			
-// 					  		</div>`;
-
-// },"")};
-
-// itemLocation.append(itemMarkup(items));
-
-
 var itemLocation = $(document.querySelector(".products"));
 
 
 function createItem(product){
 
-	var productImg = product.Images[0].url_170x135;
-
 		return `<div class="product">
-
-		  			<img src="${productImg}">
+					<i class="fa fa-heart"></i>
+					<i class="fa fa-bars"></i>
+		  			<img src="${product.Images[0].url_170x135}">
 		  			<div class="productInfo">
 			  			<div class="productTitle">${product.title}</div>
 			  			<div class="makerAndPrice">

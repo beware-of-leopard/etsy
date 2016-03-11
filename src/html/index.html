@@ -69,19 +69,24 @@
   		</ul>
   		<div class="searchRefine">
   			<h4>Refine your search</h4>
-        <div>
-          <div class="itemType">
+        <div class="refine">
+          <div class="itemType refineSection">
             <h4>Item type</h4>
-            <input type="radio"></input>
-            <input type="radio"></input>
-            <input type="radio"></input>
+            <div class="radio"><input type="radio" id="allItems"></input><label for="allItems"> All items</label></div>
+            <div class="radio"><input type="radio" id="handmade"></input><label for="handmade"> Handmade</label></div>
+            <div class="radio"><input type="radio" id="vintage"></input><label for="vintage"> Vintage</label></div>
           </div>
-          <div>
-            <h4>Price ($)</h4>
-            <input placeholder="Low"></input>
-            <input placeholder="High"></input>
+          <div class="price refineSection">
+              <h4>Price ($)</h4>
+              <div>
+                <input placeholder="Low" class="textInput"></input>
+                <p>to</p>
+                <input placeholder="High" class="textInput"></input>
+                <p>>></p>
+              </div>
+              
           </div>
-          <div>
+          <div class="refineSection">
             <h4>Filter by color</h4>
             <div class="colorSelector"></div>
             <div class="colorSelector"></div>
@@ -92,19 +97,22 @@
             <div class="colorSelector"></div>
             <div class="colorSelector"></div>
           </div>
-          <div>
+          <div class="refineSection">
             <h4>Ordering options</h4>
-            <input type="checkbox"></input>
-            <input type="checkbox"></input>
-          </div>
-          <div>
+            <div class="radio"><input type="checkbox" id="AcceptsEtsyGiftCards"></input><label for="AcceptsEtsyGiftCards"> Accepts Etsy gift cards</label></div>
+            <div class="radio"><input type="checkbox" id "customizable"></input><label for="customizable"> Customizable</label>
+          </div></div>
+          <div class="refineSection">
             <h4>Shop location</h4>
-            <input type="radio"></input>
-            <input type="radio"></input>
+            <div class="radio"><input type="radio" id="Anywhere"></input><label for="Anywhere"> Anywhere</label></div>
+            <div class="radio"><input type="radio" id="UnitedStates"></input><label for="UnitedStates"> United States</label></div>
+            <a href="#">Choose a custom location</a>
           </div>
-          <div class="shipTo">
+          <div class="shipTo refineSection">
             <h4>Ship to</h4>
-            <select></select>
+            <select>
+              <option value="United States" selected>United States</option>
+            </select>
           </div>
         </div>
   		</div>
@@ -116,12 +124,12 @@
       <div class="subscribe">
         <h4>Get top trends and fresh editors' picks in your inbox with Etsy Finds.</h4>
         <input></input>
-        <button>Subscribe</button>
+        <button class="button">Subscribe</button>
       </div>
       <div class="footerNav">
         <ul>
           <li>Turn your passion into a business</li>
-          <li>Open a shop</li>
+          <li class="button">Open a shop</li>
           <li>Sell on Etsy</li>
           <a href="#"><li>Seller Handbook</li></a>
           <a href="#"><li>Etsy credit card reader</li></a>
@@ -164,7 +172,7 @@
       </div>
       <div class="legalFooter">
         <ul>
-          <li>United States</li><li>English (US)</li><li>$ USD</li><li>Help</li>  
+          <li><i class="fa fa-globe"></i> United States</li><li>English (US)</li><li>$ USD</li><li>Help</li>  
         </ul>
       </div>
     </div>
