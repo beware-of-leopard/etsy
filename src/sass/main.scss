@@ -4,13 +4,16 @@
 	padding:0;
 	box-sizing: border-box;
 	list-style: none;
-	font-family: 'Nunito', sans-serif;
+	font-family: arial, 'Nunito', sans-serif;
 	text-decoration: none;
+	color: #444;
+	a{
+		color: #0895B7;
+	}
+
 }
 
-a{
-	color: #0895B7;
-}
+
 
 .button{
 	background-color: #34A8C4;
@@ -52,9 +55,15 @@ header{
 			input,button{
 				height: 30px;
 				padding: 5px;
+				vertical-align: top;
 			}
 			input{
 				width:80%;
+				font-size: 0.9em;
+				background-color: #f5f5f1;
+				border: 1px solid #CFCBC8;
+			}::-webkit-input-placeholder {
+			   color: #444;
 			}
 			button{
 				width: 20%;
@@ -96,7 +105,7 @@ header{
 	nav{
 		width: 100%;
 		border-top: 1px solid #DCDCD9;
-		color: darken(#E1E3DF, 50%);
+		
 		height: 50px;
 		ul{
 			margin: auto;
@@ -105,6 +114,7 @@ header{
 				display: inline-block;
 				padding-right: 15px;
 				line-height: 50px;
+				color: darken(#E1E3DF, 50%);
 			}
 			li:last-child{
 				padding-right: 0;
@@ -218,7 +228,12 @@ header{
 				background: white;
 				div.refineSection{
 					border-bottom: 1px solid #DCDCD9;
-					padding: 10px 0 10px 0;
+					padding: 20px 0 20px 0;
+					h4{
+						margin-bottom: 5px;
+					}
+				}div.refineSection:first-child{
+					padding-top: 0;
 				}
 				.price div {
 					input{
@@ -231,6 +246,9 @@ header{
 				}}
 				.shipTo.refineSection{
 					border-bottom: none;
+					.select{
+						height: 40px;
+					}
 				}.itemType {
 					padding-top: 0;
 				}
@@ -287,6 +305,15 @@ footer{
 		border-radius: 5%;
 		margin-top: 30px;
 		padding: 30px;
+		h4{
+			margin-bottom: 20px;
+		}
+		input{
+			width: 200px;
+			height: 30px;
+			font-size: 1em;
+			padding-left: 5px;
+		}
 	}
 	.footerNav{
 		display: flex;
@@ -301,11 +328,12 @@ footer{
 			li{
 				text-align: left;
 				margin-bottom: 10px;
-				&:nth-child(3){
-				margin-top: 20px;
-				}
+				
 			}
-		}	
+			li.button{
+				display: inline-block;
+				}
+		}
 	}
 	.legalFooter{
 		padding-bottom: 30px;
